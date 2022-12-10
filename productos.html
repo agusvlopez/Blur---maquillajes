@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLUR Maquillaje</title>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="body-bg">
+  <div class="modal" tabindex="-1" id="modal-detalles">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <span class="modal-title">Medios de pago</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body btn-form-bg">
+          <div class="border border-white p-3 m-2 body-bg">
+            <div class="h5 border-bottom-violeta pb-2">Tarjetas de crédito</div>
+            <div><img src="./img/visa.png" alt="tarjeta visa" class="tamanio-tarjeta"> <img src="./img/mastercard.png" alt="tarjeta mastercard" class="tamanio-tarjeta"></div>
+            <p>3 cuotas sin interés</p>
+          </div>
+
+          <div class="border border-white p-3 m-2 body-bg">
+            <div class="h5 border-bottom-violeta pb-2">Tarjeta de débito y efectivo</div>     
+            
+            <div class="h6 fw-bolder">Débito</div>
+            <div><img src="./img/maestro.png" alt="Tarjeta maestro" class="tamanio-tarjeta"> <img src="./img/visa.png" alt="tarjeta visa" class="tamanio-tarjeta"></div> 
+
+            <div class="h6 fw-bolder pt-2">Transferencia o depósito<span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">10% off</span></div>
+            <div><img src="./img/red-link.png" alt="Logo de red link" class="tamanio-red-link"></div>
+            <p class="off-flex pt-2"></p>
+            <p class="font-small">El descuento será aplicado sobre el costo total de la compra (sin envío) al finalizar la misma.</p>  
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <h1 class="d-none">BLUR Maquillaje</h1>
+  
+  <nav class="navbar nav-logo fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand p-3 w-25" href="index.html"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+            <li class="nav-item" >
+              <a class="nav-link nav-font-color" aria-current="page" href="index.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font-color" aria-current="page" href="index.html #nuestrosProductos">Nuestros productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font-color" aria-current="page" href="productos.html">Lo nuevo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font-color" aria-current="page" href="index.html #catEye"><span lang="en">Cat eye by </span><strong>BLUR</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font-color" aria-current="page" href="index.html #newsletter"><span lang="en">Newsletter</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pt-5">
+    <header class="container-md g-0 ">
+        <div class="carousel slide" data-bs-ride="carousel" id="miSlider">
+          <div class="carousel-inner">
+            <div class="carousel-item ">
+              <img src="./img/sombras-home.png" alt="" class="img-fluid ">
+            </div>
+            <div class="carousel-item active">
+              <img src="./img/una-home-texto.png" alt="" class="img-fluid">
+            </div>
+            <div class="carousel-item ">
+              <img src="./img/dos-home-texto.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        
+          <button class="carousel-control-prev" type="button" data-bs-target="#miSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#miSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#miSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#miSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#miSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+  
+        </div>
+    </header>
+  </div>
+
+  <main class="pt-3 container ">
+    <section>
+
+      <div class="col-12">
+        <h2 class="text-uppercase pt-3 text-uppercase container-md pt-5 pb-4 text-center">Lo nuevo</h2>
+      </div>
+    <section class="pb-5">
+      <div class=" flex-productos">
+        <div class="galeria-imagenes">
+          <div class="cell-2-2 grid-cell">
+            <div class="fondo" style="background-image: url('img/sombra.jpg');"></div>
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/producto-sombra-2.png');"></div> 
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/producto-sombra-3.png');"></div>
+          </div>
+        </div>
+
+        <div class="flex-column p-2">
+          <h3 class="card-title border-bottom-violeta pb-2 pt-2">Sombra de ojos <span lang="en">'Colorfully'</span></h3>
+          <p class="card-text my-3">La paleta de sombras <span lang="en">'Colorfully'</span> incluye 16 tonos brillantes perfectos para crear un estilo de maquillaje de ojos personalizado.</p>
+          <div class="w-25">
+            <img src="./img/cinco-estrellas.png" alt="Cinco estrellas amarillas" class="img-fluid">
+          </div>
+          <span class="p-1 ">(104)</span>
+
+          <p class="text-end h4 mt-4 mb-3">ARS$ 6500,00</p>
+          <div class="btn-comprar-padre">
+            <a href="productos.html" class="btn bg-mi-lima mt-2 mb-2 rounded-0 font-color-grey text-uppercase btn-comprar">Agregar al carrito</a>
+          </div>
+        
+
+        <div class="accordion pt-3 " id="accordion1">
+          <div class="accordion-item border-none ">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span><img src="./img/tarjeta.png" alt="vector de una tarjeta de credito" class="img-fluid img-acordion m-2"></span><span>Medios de pago</span>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+              <div class="accordion-body">
+                <p> <span class="fw-bolder">3 cuotas sin interés</span> de $2166,67</p>
+                <p> <span class="fw-bolder">10% de descuento</span> pagando con Transferencia o depósito bancario.</p>
+                <div > 
+                  <a class="link" href="#modal-detalles" >Ver más detalles</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span><img src="./img/entrega.png" alt="vector de camion de envio" class="img-fluid img-acordion m-2"></span><span>Medios de envío</span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
+              <div class="accordion-body">
+              <span class="border-bottom w-50 d-block">ENVÍO A DOMICILIO</span> 
+              <p> Correo Argentino - Envio a domicilio <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              <p> MENSAJERIA CABA Y GBA <span class="fw-bold">$890</span></p>             
+              <span class="border-bottom w-50 d-block">RETIRO POR</span> 
+              <p>Punto de retiro <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span><img src="./img/comercio.png" alt="vector de un comercio" class="img-fluid img-acordion m-2"></span><span>Nuestro local</span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
+              <div class="accordion-body">
+               <p>Retiro por el local. - Av Cabildo 1234. Depto 208.</p> 
+               <p>Retiros miercoles, jueves y viernes de 11 a 15.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section pb-2>
+      <div class=" flex-productos">
+        <div class="galeria-imagenes">
+          <div class="cell-2-2 grid-cell">
+            <div class="fondo" style="background-image: url('img/gloss-dorado-1.jpg');"></div>
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/gloss-dorado-2.jpg');"></div> 
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/gloss-dorado-3.jpg');"></div>
+          </div>
+        </div>
+
+        <div class="flex-column p-2">
+          <h3 class="card-title border-bottom-violeta pb-2 pt-2">Gloss dorado <span lang="en">'Shine'</span></h3>
+          <p class="card-text my-3">El gloss <span lang="en">'Shine'</span> ahora en dorado y llegó para quedarse. Dura hasta 12 horas y es fácil de remover.</p>
+          <div class="w-25">
+            <img src="./img/cinco-estrellas.png" alt="Cinco estrellas amarillas" class="img-fluid">
+          </div>
+          <span class="p-1 ">(93)</span>
+
+          <p class="text-end h4 mt-4 mb-3">ARS$ 3800,00 </p>
+          <div class="btn-comprar-padre">
+            <a href="productos.html" class="btn bg-mi-lima mt-2 mb-2 rounded-0 font-color-grey text-uppercase btn-comprar">Agregar al carrito</a>
+          </div>
+        
+
+        <div class="accordion pt-3 " id="accordion2">
+          <div class="accordion-item border-none ">
+            <h2 class="accordion-header" id="headingOne2">
+              <button class="accordion-button rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                <span><img src="./img/tarjeta.png" alt="vector de una tarjeta de credito" class="img-fluid img-acordion m-2"></span><span>Medios de pago</span>
+              </button>
+            </h2>
+            <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2" data-bs-parent="#accordion2">
+              <div class="accordion-body">
+                <p> <span class="fw-bolder">3 cuotas sin interés</span> de $1266,67</p>
+                <p> <span class="fw-bolder">10% de descuento</span> pagando con Transferencia o depósito bancario.</p>
+                <div > 
+                  <a class="link2" href="#modal-detalles" >Ver más detalles</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingTwo2">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                <span><img src="./img/entrega.png" alt="vector de camion de envio" class="img-fluid img-acordion m-2"></span><span>Medios de envío</span>
+              </button>
+            </h2>
+            <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordion2">
+              <div class="accordion-body">
+              <span class="border-bottom w-50 d-block">ENVÍO A DOMICILIO</span> 
+              <p> Correo Argentino - Envio a domicilio <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              <p> MENSAJERIA CABA Y GBA <span class="fw-bold">$890</span></p>             
+              <span class="border-bottom w-50 d-block">RETIRO POR</span> 
+              <p>Punto de retiro <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingThree2">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                <span><img src="./img/comercio.png" alt="vector de un comercio" class="img-fluid img-acordion m-2"></span><span>Nuestro local</span>
+              </button>
+            </h2>
+            <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordion2">
+              <div class="accordion-body">
+               <p>Retiro por el local. - Av Cabildo 1234. Depto 208.</p> 
+               <p>Retiros miercoles, jueves y viernes de 11 a 15.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section pb-2>
+      <div class=" flex-productos">
+        <div class="galeria-imagenes">
+          <div class="cell-2-2 grid-cell">
+            <div class="fondo" style="background-image: url('img/labial-mate.png');"></div>
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/labial-mate-2.jpg');"></div> 
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/labial-mate-3.jpg');"></div>
+          </div>
+        </div>
+
+        <div class="flex-column p-2">
+          <h3 class="card-title border-bottom-violeta pb-2 pt-2">Labial mate <span lang="en">'Clasic'</span></h3>
+          <p class="card-text my-3">El labial mate <span lang="en">'Clasic'</span> en color nude es un clasico que se reforzo incorporando proteccion UV y mayor durabilidad adaptandose al calor de esta nueva temporada.</p>
+          <div class="w-25">
+            <img src="./img/cinco-estrellas.png" alt="Cinco estrellas amarillas" class="img-fluid">
+          </div>
+          <span class="p-1 ">(87)</span>
+
+          <p class="text-end h4 mt-4 mb-3">ARS$ 3400,00</p>
+          <div class="btn-comprar-padre">
+            <a href="productos.html" class="btn bg-mi-lima mt-2 mb-2 rounded-0 font-color-grey text-uppercase btn-comprar">Agregar al carrito</a>
+          </div>
+        
+
+        <div class="accordion pt-3 " id="accordion3">
+          <div class="accordion-item border-none ">
+            <h2 class="accordion-header" id="headingOne3">
+              <button class="accordion-button rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                <span><img src="./img/tarjeta.png" alt="vector de una tarjeta de credito" class="img-fluid img-acordion m-2"></span><span>Medios de pago</span>
+              </button>
+            </h2>
+            <div id="collapseOne3" class="accordion-collapse collapse show" aria-labelledby="headingOne3" data-bs-parent="#accordion3">
+              <div class="accordion-body">
+                <p> <span class="fw-bolder">3 cuotas sin interés</span> de $1133,33</p>
+                <p> <span class="fw-bolder">10% de descuento</span> pagando con Transferencia o depósito bancario.</p>
+                <div > 
+                  <a class="link3" href="#modal-detalles">Ver más detalles</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingTwo3">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+                <span><img src="./img/entrega.png" alt="vector de camion de envio" class="img-fluid img-acordion m-2"></span><span>Medios de envío</span>
+              </button>
+            </h2>
+            <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordion3">
+              <div class="accordion-body">
+              <span class="border-bottom w-50 d-block">ENVÍO A DOMICILIO</span> 
+              <p> Correo Argentino - Envio a domicilio <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              <p> MENSAJERIA CABA Y GBA <span class="fw-bold">$890</span></p>             
+              <span class="border-bottom w-50 d-block">RETIRO POR</span> 
+              <p>Punto de retiro <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingThree3">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                <span><img src="./img/comercio.png" alt="vector de un comercio" class="img-fluid img-acordion m-2"></span><span>Nuestro local</span>
+              </button>
+            </h2>
+            <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordion3">
+              <div class="accordion-body">
+               <p>Retiro por el local. - Av Cabildo 1234. Depto 208.</p> 
+               <p>Retiros miercoles, jueves y viernes de 11 a 15.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section pb-2>
+      <div class=" flex-productos">
+        <div class="galeria-imagenes">
+          <div class="cell-2-2 grid-cell">
+            <div class="fondo" style="background-image: url('img/limpiador-bifasico.png');"></div>
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/bifasico-2.jpg');"></div> 
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/bifasico-3.jpg');"></div>
+          </div>
+        </div>
+
+        <div class="flex-column p-2">
+          <h3 class="card-title border-bottom-violeta pb-2 pt-2">Bifásico BLUR</h3>
+          <p class="card-text my-3">Nuevo recipiente, formula renovada. Desmaquillante de ojos bifásico no graso.</p>
+
+          <p class="text-end h4 mt-4 mb-3">ARS$ 2500,00</p>
+          <div class="btn-comprar-padre">
+            <a href="productos.html" class="btn bg-mi-lima mt-2 mb-2 rounded-0 font-color-grey text-uppercase btn-comprar">Agregar al carrito</a>
+          </div>
+        
+
+        <div class="accordion pt-3 " id="accordion4">
+          <div class="accordion-item border-none ">
+            <h2 class="accordion-header" id="headingOne4">
+              <button class="accordion-button rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                <span><img src="./img/tarjeta.png" alt="vector de una tarjeta de credito" class="img-fluid img-acordion m-2"></span><span>Medios de pago</span>
+              </button>
+            </h2>
+            <div id="collapseOne4" class="accordion-collapse collapse show" aria-labelledby="headingOne4" data-bs-parent="#accordion4">
+              <div class="accordion-body">
+                <p> <span class="fw-bolder">3 cuotas sin interés</span> de $833,33</p>
+                <p> <span class="fw-bolder">10% de descuento</span> pagando con Transferencia o depósito bancario.</p>
+                <div > 
+                  <a class="link4" href="#modal-detalles">Ver más detalles</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingTwo4">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+                <span><img src="./img/entrega.png" alt="vector de camion de envio" class="img-fluid img-acordion m-2"></span><span>Medios de envío</span>
+              </button>
+            </h2>
+            <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4" data-bs-parent="#accordion4">
+              <div class="accordion-body">
+              <span class="border-bottom w-50 d-block">ENVÍO A DOMICILIO</span> 
+              <p> Correo Argentino - Envio a domicilio <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              <p> MENSAJERIA CABA Y GBA <span class="fw-bold">$890</span></p>             
+              <span class="border-bottom w-50 d-block">RETIRO POR</span> 
+              <p>Punto de retiro <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingThree4">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                <span><img src="./img/comercio.png" alt="vector de un comercio" class="img-fluid img-acordion m-2"></span><span>Nuestro local</span>
+              </button>
+            </h2>
+            <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4" data-bs-parent="#accordion4">
+              <div class="accordion-body">
+               <p>Retiro por el local. - Av Cabildo 1234. Depto 208.</p> 
+               <p>Retiros miercoles, jueves y viernes de 11 a 15.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section pb-2>
+      <div class=" flex-productos">
+        <div class="galeria-imagenes">
+          <div class="cell-2-2 grid-cell">
+            <div class="fondo" style="background-image: url('img/delineador-cat-eye.png');"></div>
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/delineador-2.jpg');"></div> 
+          </div>
+          <div class="cell-1-1 grid-cell">
+            <div class="fondo-horizontal" style="background-image: url('img/delineador-3.jpg');"></div>
+          </div>
+        </div>
+
+        <div class="flex-column p-2">
+          <span class="badge btn-form-bg text-uppercase mb-2">Promo</span>
+          <h3 class="card-title border-bottom-violeta pb-2 pt-2">Delineador '<span lang="en">CAT EYE</span>'</h3>
+          <p class="card-text my-3">Su fórmula <span lang="en">waterproof</span> se adhiere perfectamente a las pestañas, sin correr ni transferir. Apto para usuarios de lentes de contacto.</p>
+          <div class="w-25">
+            <img src="./img/cinco-estrellas.png" alt="Cinco estrellas amarillas" class="img-fluid">
+          </div>
+          <span class="p-1 ">(103)</span>
+
+          <p class="tachado text-end h6 mt-4 font-gris-claro"> ARS$ 4200,00</p>
+          <p class="text-end h4 mt-4 mb-3">ARS$ 3800,00</p>
+          <div class="btn-comprar-padre">
+            <a href="productos.html" class="btn bg-mi-lima mt-2 mb-2 rounded-0 font-color-grey text-uppercase btn-comprar">Agregar al carrito</a>
+          </div>
+        
+
+        <div class="accordion pt-3 " id="accordion5">
+          <div class="accordion-item border-none ">
+            <h2 class="accordion-header" id="headingOne5">
+              <button class="accordion-button rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5">
+                <span><img src="./img/tarjeta.png" alt="vector de una tarjeta de credito" class="img-fluid img-acordion m-2"></span><span>Medios de pago</span>
+              </button>
+            </h2>
+            <div id="collapseOne5" class="accordion-collapse collapse show" aria-labelledby="headingOne4" data-bs-parent="#accordion5">
+              <div class="accordion-body">
+                <p> <span class="fw-bolder">3 cuotas sin interés</span> de $1266,67</p>
+                <p> <span class="fw-bolder">10% de descuento</span> pagando con Transferencia o depósito bancario.</p>
+                <div > 
+                  <a class="link5" href="#modal-detalles">Ver más detalles</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingTwo5">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                <span><img src="./img/entrega.png" alt="vector de camion de envio" class="img-fluid img-acordion m-2"></span><span>Medios de envío</span>
+              </button>
+            </h2>
+            <div id="collapseTwo5" class="accordion-collapse collapse" aria-labelledby="headingTwo5" data-bs-parent="#accordion5">
+              <div class="accordion-body">
+              <span class="border-bottom w-50 d-block">ENVÍO A DOMICILIO</span> 
+              <p> Correo Argentino - Envio a domicilio <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              <p> MENSAJERIA CABA Y GBA <span class="fw-bold">$890</span></p>             
+              <span class="border-bottom w-50 d-block">RETIRO POR</span> 
+              <p>Punto de retiro <span class="badge list-group-item-negro fw-normal rounded-0 text-uppercase mb-2 ms-2">Gratis</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-none">
+            <h2 class="accordion-header" id="headingThree5">
+              <button class="accordion-button collapsed rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                <span><img src="./img/comercio.png" alt="vector de un comercio" class="img-fluid img-acordion m-2"></span><span>Nuestro local</span>
+              </button>
+            </h2>
+            <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree5" data-bs-parent="#accordion5">
+              <div class="accordion-body">
+               <p>Retiro por el local. - Av Cabildo 1234. Depto 208.</p> 
+               <p>Retiros miercoles, jueves y viernes de 11 a 15.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+       
+    </section>
+ 
+  </main>
+
+   <footer class="btn-form-bg mt-3 p-3">
+    <div class="container-md">
+
+      <div class="row">
+          <div class="col-12 col-md-6 p-4">
+            <img src="./img/agustina_lopez.jpg" alt="Imagen de la alumna" class="img-fluid"> 
+          </div>
+          <div class="col-12 col-md-6 p-4">
+            <div class="p-2 fs-5 text-white">Nombre: Agustina</div>
+            <div class="p-2 fs-5 text-white">Apellido: Lopez</div>
+            <div class="p-2 fs-5 text-white">Fecha de nacimiento: 27/09/1998</div>
+            <div class="p-2 fs-5 text-white">E-mail: agusvlopez@gmail.com</div>
+          </div>
+        
+        </div>
+    </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+   <script src="./js/js.js"></script>
+</body>
+</html>

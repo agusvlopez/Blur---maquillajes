@@ -1,0 +1,260 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.body-bg {
+background-color: #FFFDFB;
+}
+
+.btn-a {
+    background-color: rgb(52, 0, 131);
+    color: whitesmoke;
+    border: 1px solid rgb(52, 0, 131);
+}
+    
+.nav-logo {
+    background-image: url(../img/logo-nav.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #5B2261;
+}
+
+.nav-font-color {
+    color: #606470;
+}
+
+.nav-font-color:hover{
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/menu.png);
+    background-size: cover;
+}
+
+.navbar-toggler {
+    border: none;
+    border-color : transparent;
+}
+
+.bg-mi-lima {
+    background-color: #F8ED86;
+}
+.bg-todo-el-ancho {
+    margin: 0 -1rem;
+}
+.accordion-button-border-bottom {
+    border: none;
+    border-bottom: 1px solid rgba(143, 141, 141, 0.87);
+}
+
+.accordion-button-border-top {
+    border-top: 1px solid rgba(143, 141, 141, 0.87);
+}
+
+.font-color-violet {
+    color: #6D42C7;
+}
+.font-color-grey {
+    color: #434446;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.list-group-item-negro {
+    background-color: black;
+}
+
+.btn-form-bg {
+    background-color: #5B2261;
+}
+
+
+.border-bottom-violeta {
+    border-bottom: thin solid #5B2261;
+}
+.border-bottom-violeta-ancho {
+    border-bottom: solid 3px #5B2261;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.font-gris-claro {
+    color: #6a6a6b;
+}
+
+.galeria-imagenes {
+    width: 300px;
+    height: 500px;
+    background-color: #FFFDFB;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    margin: auto;
+}
+
+.cell-2-2 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.cell-1-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.grid-cell div{
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.fondo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    
+}
+
+.fondo-horizontal {
+    background-size: 80%;
+    background-position-y: -15px;
+    background-position-x: center;
+}
+
+
+.btn-comprar {
+    display: block;
+
+}
+
+.img-acordion {
+    width: 25px;
+    height: 25px;
+}
+
+.border-none {
+    border: none;
+}
+
+.margin{
+    margin: auto;
+}
+
+.link, .link2, .link3, .link4, .link5 {
+    text-decoration: none;
+    color: #5B2261;
+    font-weight: 600;
+}
+.link:hover {
+    color:#434446;
+}
+
+.tamanio-tarjeta {
+    width: 45px;
+}
+.tamanio-red-link {
+    width: 30px;
+}
+
+.font-small {
+    font-size: 0.8rem;
+}
+
+.off-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .btn-comprar-padre {
+        display:flex;
+        align-items: flex-end;
+        justify-content: end;
+    }
+    .btn-comprar {
+        width: 25%;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+.p-con-flex {
+    display: flex;
+}
+.p-con-margen {
+   
+   align-self: center;
+   justify-self: center;
+}
+
+.card-body-cat-eye {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card-row {
+    gap: 30px;
+    padding: 2rem;
+}
+
+.card-row-2 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.card {
+    width: 100%;
+}
+
+.flex-productos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+}
+.flex-column {
+    flex-direction: column;    
+    width:80%;
+    
+}
+.cell-2-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.cell-1-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .galeria-imagenes {
+        height: 500px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
