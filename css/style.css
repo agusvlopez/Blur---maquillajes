@@ -147,13 +147,14 @@ background-color: #FFFDFB;
     margin: auto;
 }
 
-.link, .link2, .link3, .link4, .link5 {
+.link, .link2, .link3, .link4, .link5, .link6 {
     text-decoration: none;
     color: #5B2261;
     font-weight: 600;
 }
-.link:hover {
-    color:#434446;
+
+.link:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover {
+    color: #434446;
 }
 
 .tamanio-tarjeta {
