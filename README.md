@@ -1,2 +1,2 @@
 # Blur - maquillajes
-This is my first Website using Bootstrap
+This is my first Website project using Bootstrap
